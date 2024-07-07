@@ -86,4 +86,12 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  .tilted-image {
+    @apply transform transition-transform duration-300;
+    transform: rotate(4deg);
+    max-width: 95%; /* Adjust the size as needed */
+    /* position: relative; */
+    top: 225px; /* Adjust the position as needed */
+  }
 }
