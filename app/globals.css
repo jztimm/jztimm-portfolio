@@ -92,6 +92,6 @@
     transform: rotate(4deg);
     max-width: 95%; /* Adjust the size as needed */
     /* position: relative; */
-    top: 225px; /* Adjust the position as needed */
+    top: 100px; /* Adjust the position as needed */
   }
 }

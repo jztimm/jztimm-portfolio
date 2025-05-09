@@ -95,12 +95,20 @@ export const techStacks = [
 export const projects = [
   {
     id: 1,
-    title: "GPT-3 OpenAI Exploration",
-    des: "Discover the capabilities of GPT-3 through innovative projects and case studies. Learn how AI can transform various industries with cutting-edge technology.",
-    img: "/GPT3.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://gpt-jz.netlify.app",
+    title: "My Floral Vault",
+    des: "Explore plants, herbs, and remedies with community-powered insights.",
+    img: "/FloralVault-thumbnail.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
+    link: "https://flora-vault.vercel.app",
   },
+  // {
+  //   id: 1,
+  //   title: "GPT-3 OpenAI Exploration",
+  //   des: "Discover the capabilities of GPT-3 through innovative projects and case studies. Learn how AI can transform various industries with cutting-edge technology.",
+  //   img: "/GPT3.png",
+  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+  //   link: "https://gpt-jz.netlify.app",
+  // },
   {
     id: 2,
     title: "Animated Apple Iphone 3D Website",
