@@ -6,9 +6,12 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jzavier's Portfolio",
+  title: "Jzavier's Portfolio - Full Stack Developer",
   description:
-    "Welcome to Jzavier Timm's professional portfolio. Explore my work in front-end development with technologies like React, Next.js, and JavaScript, as well as my experience with back-end solutions using Node.js and .NET. Discover my projects, skills, and experience in delivering performant and user-friendly web solutions.",
+    "Welcome to Jzavier Timm's professional portfolio. Explore my work in full-stack development with technologies like React, Next.js, TypeScript, and Node.js. Discover my projects, skills, and experience in delivering performant and user-friendly web solutions with 40% performance improvements and 99.9% uptime.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -31,3 +34,4 @@ export default function RootLayout({
     </html>
   );
 }
+

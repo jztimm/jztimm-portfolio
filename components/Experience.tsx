@@ -32,6 +32,19 @@ const Experience = () => {
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>
+
+                {card.metrics && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {card.metrics.map((metric, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-purple/20 border border-purple/30 rounded-full text-sm text-purple"
+                      >
+                        {metric}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </Button>

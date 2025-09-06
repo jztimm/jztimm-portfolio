@@ -89,9 +89,10 @@
 
   .tilted-image {
     @apply transform transition-transform duration-300;
-    transform: rotate(4deg);
+    transform: rotate(1deg);
     max-width: 95%; /* Adjust the size as needed */
     /* position: relative; */
     top: 100px; /* Adjust the position as needed */
   }
 }
+

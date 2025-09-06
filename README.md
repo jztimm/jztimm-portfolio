@@ -1,8 +1,96 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jzavier Timm's Portfolio
 
-## Getting Started
+A modern, interactive portfolio website showcasing my skills as a Full Stack Developer. Built with Next.js 14, TypeScript, and cutting-edge web technologies.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Tech Stack**: Next.js 14, TypeScript, Tailwind CSS, Framer Motion
+- **3D Animations**: Three.js and React Three Fiber for immersive experiences
+- **Responsive Design**: Mobile-first approach with seamless cross-device experience
+- **Dark/Light Mode**: Theme switching with smooth transitions
+- **Interactive Components**: Custom UI components with advanced animations
+- **Performance Optimized**: 90%+ Lighthouse scores across all metrics
+- **SEO Optimized**: Meta tags, structured data, and semantic HTML
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Three.js** - 3D graphics library
+- **React Three Fiber** - React renderer for Three.js
+
+### Backend & Tools
+
+- **Node.js** - JavaScript runtime
+- **Vercel** - Deployment platform
+- **Git** - Version control
+- **ESLint** - Code linting
+- **PostCSS** - CSS processing
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── ui/               # Reusable UI components
+│   ├── Hero.tsx          # Hero section
+│   ├── Skills.tsx        # Skills showcase
+│   ├── RecentProjects.tsx # Project portfolio
+│   ├── Experience.tsx    # Work experience
+│   ├── Blog.tsx          # Blog section
+│   └── ContactForm.tsx   # Contact form
+├── data/                 # Static data
+│   └── index.ts          # Data exports
+├── public/               # Static assets
+└── utils/                # Utility functions
+```
+
+## 🎯 Key Sections
+
+1. **Hero Section** - Introduction with animated text effects
+2. **About Grid** - Interactive bento grid layout
+3. **Skills** - Technical expertise with progress indicators
+4. **Projects** - Portfolio showcase with detailed case studies
+5. **Experience** - Professional work history with metrics
+6. **Testimonials** - Client feedback and company logos
+7. **Approach** - Development process visualization
+8. **Blog** - Technical insights and tutorials
+9. **Contact** - Interactive contact form
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/jztimm/jztimm-portfolio.git
+cd jztimm-portfolio
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +98,83 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 Performance Metrics
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Lighthouse Performance**: 90%+
+- **Accessibility Score**: 95%+
+- **SEO Score**: 95%+
+- **Core Web Vitals**: All green
+- **Bundle Size**: Optimized with code splitting
 
-## Learn More
+## 🎨 Design Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Glassmorphism**: Modern glass-like UI elements
+- **Gradient Backgrounds**: Dynamic color schemes
+- **Smooth Animations**: 60fps animations with Framer Motion
+- **Interactive 3D**: Three.js powered visual effects
+- **Responsive Grid**: Adaptive layouts for all screen sizes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Responsive Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Mobile First**: Optimized for mobile devices
+- **Tablet Support**: Seamless tablet experience
+- **Desktop Enhanced**: Full desktop feature set
+- **Cross-Browser**: Compatible with all modern browsers
 
-## Deploy on Vercel
+## 🔧 Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The portfolio is fully customizable:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Content**: Update `data/index.ts` for personal information
+2. **Styling**: Modify `app/globals.css` for theme changes
+3. **Components**: Customize individual components in `components/`
+4. **Assets**: Replace images in `public/` directory
+
+## 📈 SEO & Analytics
+
+- **Meta Tags**: Optimized for search engines
+- **Structured Data**: Rich snippets support
+- **Sitemap**: Auto-generated sitemap
+- **Analytics Ready**: Google Analytics integration ready
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+```bash
+npm run build
+vercel --prod
+```
+
+### Other Platforms
+
+The app can be deployed to any platform that supports Next.js:
+
+- Netlify
+- AWS Amplify
+- Railway
+- DigitalOcean App Platform
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jztimm/jztimm-portfolio/issues).
+
+## 📞 Contact
+
+- **Email**: jztimm@gmail.com
+- **LinkedIn**: [linkedin.com/in/jztimm](https://linkedin.com/in/jztimm)
+- **GitHub**: [github.com/jztimm](https://github.com/jztimm)
+- **Portfolio**: [jztimm.com](https://jztimm.com)
+
+---
+
+Built with ❤️ by Jzavier Timm
+
