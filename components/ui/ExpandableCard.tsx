@@ -11,12 +11,16 @@ export const useOutsideClick = (
 ) => {
   React.useEffect(() => {
     const listener = (event: any) => {
+      // Don't close if clicking inside the modal
       if (!ref.current || ref.current.contains(event.target)) {
         return;
       }
+
+      // Only close on actual click events, not scroll or wheel events
       callback(event);
     };
 
+    // Only listen to click events, not scroll events
     document.addEventListener("mousedown", listener);
     document.addEventListener("touchstart", listener);
 
@@ -55,14 +59,11 @@ const ExpandableCardContent = ({
   img: string;
 }) => {
   const { isExpanded, setIsExpanded } = useExpandableCard();
-  const cardRef = useRef<HTMLDivElement>(null);
-
-  useOutsideClick(cardRef, () => setIsExpanded(false));
+  const modalRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
       <motion.div
-        ref={cardRef}
         className={cn("relative", className)}
         initial={false}
         animate={{ height: isExpanded ? "auto" : "auto" }}
@@ -80,15 +81,27 @@ const ExpandableCardContent = ({
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="fixed inset-0 bg-black/80 backdrop-blur-sm z-[9999] flex items-center justify-center p-4"
-            onClick={() => setIsExpanded(false)}
+            onClick={(e) => {
+              // Only close if clicking directly on the backdrop, not on child elements
+              if (
+                e.target === e.currentTarget &&
+                modalRef.current &&
+                !modalRef.current.contains(e.target as Node)
+              ) {
+                setIsExpanded(false);
+              }
+            }}
           >
             <motion.div
+              ref={modalRef}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="bg-black-200/95 backdrop-blur-sm border border-white/10 rounded-2xl p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative z-[10000]"
               onClick={(e) => e.stopPropagation()}
+              onScroll={(e) => e.stopPropagation()}
+              onWheel={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button
