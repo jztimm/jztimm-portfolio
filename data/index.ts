@@ -99,7 +99,7 @@ export const projects = [
     id: 1,
     title: "LocalStead",
     des: "A comprehensive local business discovery platform connecting communities with nearby services, featuring advanced search, reviews, and real-time availability tracking.",
-    img: "/localstead-thumbnail.png",
+    img: "/LocalStead-thumbnail.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
     link: "https://local-stead-olive.vercel.app/",
     challenge:
@@ -121,7 +121,7 @@ export const projects = [
     id: 2,
     title: "Petlistings",
     des: "A specialized pet adoption and listing platform featuring advanced filtering, pet profiles, adoption tracking, and seamless communication between adopters and shelters.",
-    img: "/petlistings-thumbnail.png",
+    img: "/PetListings-thumbnail.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
     link: "https://petlistings.com/",
     challenge:
@@ -143,7 +143,7 @@ export const projects = [
     id: 3,
     title: "Freedom Stairlifts Inventory Management System",
     des: "A comprehensive inventory management solution for Freedom Stairlifts, featuring real-time tracking, automated reordering, and detailed analytics for equipment management.",
-    img: "/freedom-stairlifts-thumbnail.png",
+    img: "/Freedom-Stairlifts-thumbnail.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
     link: "https://freedom-stairlifts-tracker.vercel.app",
     challenge:
