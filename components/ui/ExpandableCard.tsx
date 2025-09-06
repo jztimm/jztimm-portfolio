@@ -39,6 +39,7 @@ const ExpandableCardContent = ({
   results,
   link,
   iconLists,
+  img,
 }: {
   children: React.ReactNode;
   className?: string;
@@ -51,6 +52,7 @@ const ExpandableCardContent = ({
   results: string[];
   link: string;
   iconLists: string[];
+  img: string;
 }) => {
   const { isExpanded, setIsExpanded } = useExpandableCard();
   const cardRef = useRef<HTMLDivElement>(null);
@@ -108,8 +110,18 @@ const ExpandableCardContent = ({
 
               {/* Expanded Content */}
               <div className="space-y-6">
+                {/* Project Image */}
+                <div className="w-full h-64 rounded-xl overflow-hidden bg-[#13162d] flex items-center justify-center">
+                  <img
+                    src={img}
+                    alt={title}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+
+                {/* Title and Description */}
                 <div>
-                  <h2 className="text-3xl font-bold text-white mb-2">
+                  <h2 className="text-3xl font-bold text-white mb-4">
                     {title}
                   </h2>
                   <p className="text-white/70 text-lg leading-relaxed">
@@ -153,11 +165,11 @@ const ExpandableCardContent = ({
                   <h3 className="text-lg font-semibold text-purple mb-4">
                     Performance Metrics
                   </h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {Object.entries(metrics).map(
                       ([key, value]) =>
                         value && (
-                          <div key={key} className="text-center">
+                          <div key={key} className="text-left">
                             <div className="text-2xl font-bold text-white">
                               {value}
                             </div>

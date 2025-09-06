@@ -47,7 +47,7 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
 
-      <div className="relative flex flex-wrap items-center justify-center p-4 gap-x-24 md:gap-x-24 lg:gap-x-24 md:gap-y-32 lg:gap-y-52 mt-24">
+      <div className="relative flex flex-wrap items-center justify-center p-4 gap-x-24 md:gap-x-24 lg:gap-x-24 md:gap-y-32 lg:gap-y-52 mt-40 md:mt-52 lg:mt-64">
         {projects.map(
           ({
             id,
@@ -74,6 +74,7 @@ const RecentProjects = () => {
                 results={results}
                 link={link}
                 iconLists={iconLists}
+                img={img}
               >
                 <PinContainer title={link} href={link}>
                   <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden  sm:h-[40vh] h-[30vh] mb-10">
