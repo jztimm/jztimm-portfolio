@@ -52,7 +52,7 @@ const ContactForm = () => {
         </div>
         <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
         <p className="text-white/70">
-          Thank you for reaching out. I'll get back to you within 24 hours.
+          Thank you for reaching out. I&apos;ll get back to you within 24 hours.
         </p>
       </motion.div>
     );

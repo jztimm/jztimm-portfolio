@@ -56,10 +56,11 @@ export const BentoGridItem = ({
   const rightLists = ["Node.js", "MongoDB", "SQL"];
 
   const [copied, setCopied] = useState(false);
+  const [animationKey, setAnimationKey] = useState(0);
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
+    loop: false,
+    autoplay: true,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -71,6 +72,7 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(email);
 
     setCopied(true);
+    setAnimationKey((prev) => prev + 1); // Force animation restart
 
     // Reset the copied state after 2 seconds to allow confetti to play again
     setTimeout(() => {
@@ -170,7 +172,14 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div className={`absolute -bottom-5 right-0`}>
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {copied && (
+                  <Lottie
+                    key={animationKey}
+                    options={defaultOptions}
+                    height={200}
+                    width={400}
+                  />
+                )}
               </div>
 
               <MagicButton

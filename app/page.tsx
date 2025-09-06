@@ -15,16 +15,12 @@ import Skills from "@/components/Skills";
 import Blog from "@/components/Blog";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Home() {
   return (
     <main className="relative flex bg-black-100 justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
-        <div className="fixed top-4 right-4 z-50">
-          <ThemeToggle />
-        </div>
         <Hero />
         <Grid />
         <Skills />
