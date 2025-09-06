@@ -71,6 +71,11 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(email);
 
     setCopied(true);
+
+    // Reset the copied state after 2 seconds to allow confetti to play again
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
   };
 
   return (
